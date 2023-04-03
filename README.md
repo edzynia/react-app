@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Application Preview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://chimerical-gecko-7548a6.netlify.app/
 
 ## Available Scripts
 
