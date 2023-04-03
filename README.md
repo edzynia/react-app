@@ -2,14 +2,14 @@
 
 https://chimerical-gecko-7548a6.netlify.app/
 
-### To run the application localy:
-####  clone the repository
-####  `npm install`
-#### `npm start`
+### To run the application localy use the comands below:
+#####  clone the repository
+#####  `npm install`
+##### `npm start`
 
 #### The requirements for building the application here:Requirements: [PDF Document](./docs/Epiceros_test.pdf)
 
-#### The application was built with the React and Tailwind with the folowing:
+### The application was built with the React and Tailwind with the folowing:
 
 ##### Styles have been copied from sandbox and changed a bit.
 ##### For the get request, we used the usual feth built into the browser.
