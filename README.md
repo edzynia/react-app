@@ -7,7 +7,7 @@ https://chimerical-gecko-7548a6.netlify.app/
 #####  `npm install`
 ##### `npm start`
 
-#### The requirements for building the application here:Requirements: [PDF Document](./docs/Epiceros_test.pdf)
+#### The requirements for building the application here:[PDF Document](./docs/Epiceros_test.pdf)
 
 ### The application was built with the React and Tailwind with the folowing:
 
