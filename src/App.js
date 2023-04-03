@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import TeamList from './components/TeamList';
+import Form from './components/Form';
 
 function App() {
+  const [teamList, setTeamList] = useState([]);
+
+  useEffect(() => {
+    fetch('https://run.mocky.io/v3/9118e647-e131-43c7-8668-d99af1abb5a6')
+      .then((response) => response.json())
+      .then((data) => setTeamList(data.team));
+  }, []);
+
+  const handleAddTeamMember = (name) => {
+    const newTeamMember = name;
+    setTeamList([...teamList, newTeamMember]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex vh-100 items-center'>
+      <TeamList teamList={teamList} />
+      <Form handleAddTeamMember={handleAddTeamMember} />
     </div>
   );
 }
